@@ -1,0 +1,84 @@
+Searching 27 files for "<Select"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\assesment\add.tsx:
+   55  						<div className="grid gap-2">
+   56  							<Label htmlFor="jenis_bimtek">Jenis Bimtek</Label>
+   57: 							<Select
+   58  								options={jenis_bimtek}
+   59  								name="jenis_bimtek"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\assesment\edit.tsx:
+   54  						<div className="grid gap-2">
+   55  							<Label htmlFor="jenis_bimtek">Jenis Bimtek</Label>
+   56: 							<Select
+   57  								options={jenis_bimtek}
+   58  								name="jenis_bimtek"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\bimtek\add.tsx:
+   71  						<div className="grid gap-2">
+   72  							<Label htmlFor="assesment_id">Assesment</Label>
+   73: 							<Select options={assesment} name="assesment_id" required/>
+   74  							<InputError
+   75  								className="mt-2"
+   ..
+  114  							<div className="grid gap-2">
+  115  								<Label htmlFor="status_soal_pretest">Status Soal Pre Test</Label>
+  116: 								<Select
+  117  									options={status_paket_soal}
+  118  									name="status_soal_pretest"
+  ...
+  129  							<div className="grid gap-2">
+  130  								<Label htmlFor="status_soal_posttest">Status Soal Post Test</Label>
+  131: 								<Select
+  132  									options={status_paket_soal}
+  133  									name="status_soal_posttest"
+  ...
+  158  						<div className="grid gap-2">
+  159  							<Label htmlFor="peserta">Peserta</Label>
+  160: 							<Select options={peserta} name="peserta_id[]" isMulti/>
+  161  							<InputError
+  162  								className="mt-2"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\bimtek\edit.tsx:
+   74  						<div className="grid gap-2">
+   75  							<Label htmlFor="peserta">Peserta</Label>
+   76: 							<SelectPesertaBimtek 
+   77  								peserta_bimtek={data.peserta_bimtek}
+   78  							/>
+   ..
+   85  						<div className="grid gap-2">
+   86  							<Label htmlFor="assesment_id">Assesment</Label>
+   87: 							<Select
+   88  								options={assesment}
+   89  								name="assesment_id"
+   ..
+  136  							<div className="grid gap-2">
+  137  								<Label htmlFor="status_soal_pretest">Status Soal Pre Test</Label>
+  138: 								<Select
+  139  									options={status_paket_soal}
+  140  									name="status_soal_pretest"
+  ...
+  152  							<div className="grid gap-2">
+  153  								<Label htmlFor="status_soal_posttest">Status Soal Post Test</Label>
+  154: 								<Select
+  155  									options={status_paket_soal}
+  156  									name="status_soal_posttest"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\users\add.tsx:
+   54  						<div className="grid gap-2">
+   55  							<Label htmlFor="role">Role</Label>
+   56: 							<Select
+   57  								options={role}
+   58  								name="role"
+
+C:\xampp\htdocs\test-bimtek\resources\js\pages\users\edit.tsx:
+   54  						<div className="grid gap-2">
+   55  							<Label htmlFor="role">Role</Label>
+   56: 							<Select
+   57  								options={role}
+   58  								name="role"
+								className="custom-react-select"
+								classNamePrefix="custom-react-select"
+								unstyled
+
+12 matches across 6 files

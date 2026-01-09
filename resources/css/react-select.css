@@ -1,0 +1,87 @@
+@layer components {
+  /* === CONTAINER === */
+  .custom-react-select-container {
+    @apply w-full;
+  }
+
+  /* === CONTROL (input box) === */
+  .custom-react-select__control {
+    @apply flex min-h-[40px] w-full
+      rounded-md border border-input
+      bg-background px-3 py-1
+      text-sm text-foreground
+      shadow-sm
+      transition-colors;
+  }
+
+  .custom-react-select__control--is-focused {
+    @apply border-ring ring-1 ring-ring;
+  }
+
+  /* === VALUE / PLACEHOLDER === */
+  .custom-react-select__value-container {
+    @apply px-0 py-0 flex flex-wrap items-center gap-1;
+    /* flex-wrap: tag ke baris baru jika overflow, gap-1: jarak antar tag */
+  }
+
+  .custom-react-select__single-value {
+    @apply text-foreground;
+  }
+
+  .custom-react-select__placeholder {
+    @apply text-muted-foreground;
+  }
+
+  /* === MULTI VALUE TAG === */
+  .custom-react-select__multi-value {
+    @apply flex items-center bg-gray-100 text-gray-800 px-2 py-1 rounded;
+  }
+
+  .custom-react-select__multi-value__label {
+    @apply text-sm font-medium;
+  }
+
+  .custom-react-select__multi-value__remove {
+    @apply ml-1 text-red-500 hover:bg-red-500 hover:text-white rounded p-0.5 cursor-pointer;
+  }
+
+  /* === INPUT (hidden text input) === */
+  .custom-react-select__input-container {
+    @apply text-foreground;
+  }
+
+  /* === DROPDOWN MENU === */
+  .custom-react-select__menu {
+    @apply mt-1 rounded-md border border-input
+      bg-popover text-foreground shadow-md;
+  }
+
+  /* === OPTION === */
+  .custom-react-select__option {
+    @apply cursor-pointer px-3 py-2 text-sm;
+  }
+
+  .custom-react-select__option--is-focused {
+    @apply bg-accent text-accent-foreground;
+  }
+
+
+  .custom-react-select__option--is-selected.custom-react-select__option--is-focused {
+    @apply bg-muted/80;
+  }
+
+  /* === INDICATORS === */
+  .custom-react-select__dropdown-indicator,
+  .custom-react-select__clear-indicator {
+    @apply text-muted-foreground hover:text-foreground;
+  }
+
+  .custom-react-select__indicator-separator {
+    @apply mx-1 bg-border;
+  }
+
+  /* === DISABLED === */
+  .custom-react-select__control--is-disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+}
